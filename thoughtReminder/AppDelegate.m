@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ThoughtsStorage.h"
+#import "AnalyticsManager.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [[AnalyticsManager sharedInstance] startAnalytics];
+    
     
     NSMutableArray *thoughts = [[[NSUserDefaults standardUserDefaults] stringArrayForKey:@"thoughts"] mutableCopy];
     if (thoughts) {

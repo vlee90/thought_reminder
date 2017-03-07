@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ThoughtsStorage.h"
+#import "AnalyticsManager.h"
 
 @interface ViewController () <UITextFieldDelegate>
 
@@ -25,6 +26,12 @@
     [super viewDidLoad];
     self.questionTextField.delegate = self;
 
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [[AnalyticsManager sharedInstance] filterThenPushEvent:@{@"event":@"screenLoad",
+                                                             @"screenName":@"Home"}];
 }
 
 - (IBAction)saveButtonPressed:(id)sender {

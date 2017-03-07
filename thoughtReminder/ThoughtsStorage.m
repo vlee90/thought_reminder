@@ -29,11 +29,9 @@
 
 - (void)addThoughts:(NSString *)thought {
     [self.thoughts addObject:thought];
-    NSLog(@"DEBUG: Added: %@", thought);
 }
 
 - (NSMutableArray *)returnThoughts {
-    NSLog(@"DEBUG: Returned: %@", self.thoughts);
     return self.thoughts;
 }
 

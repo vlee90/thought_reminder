@@ -34,12 +34,10 @@
 }
 
 - (IBAction)saveButtonPressed:(id)sender {
-    NSLog(@"DEBUG: SaveButton: %@", self.questionTextField.text);
     [[ThoughtsStorage sharedInstance] addThoughts:self.questionTextField.text];
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"DEBUG: touchesBegan Called");
     [self.questionTextField endEditing:YES];
     self.saveButton.enabled = YES;
 }

@@ -56,7 +56,6 @@
         else {
             isAdTrackingEnabled = @"false";
         }
-        NSLog(@"%@, %@", isAdTrackingEnabled, adId);
         [[TAGManager instance].dataLayer push:@{@"event":@"app-init",
                                                @"adId":adId,
                                                @"isAdTrackingEnabled":isAdTrackingEnabled}];
@@ -69,11 +68,9 @@
 
 - (void)filterThenPushEvent:(NSDictionary *)eventDict {
     if (self.container) {
-        NSLog(@"AnalyticsController: Pushing to DataLayer: %@", eventDict);
         [[TAGManager instance].dataLayer push:eventDict];
     }
     else {
-        NSLog(@"AnalyticsController: Batching DataLayer Hit: %@", eventDict);
         [self.storedHitsArray addObject:eventDict];
     }
 }

@@ -20,10 +20,12 @@
 		63BABBC91E6E5A8000E0F72D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBC81E6E5A8000E0F72D /* libz.tbd */; };
 		63BABBCB1E6E5A8700E0F72D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBCA1E6E5A8700E0F72D /* libsqlite3.tbd */; };
 		63BABBCD1E6E5A9B00E0F72D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBCC1E6E5A9B00E0F72D /* AdSupport.framework */; };
-		63BABBD01E6E5AB900E0F72D /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBCE1E6E5AB900E0F72D /* libAdIdAccess.a */; };
 		63BABBD11E6E5AB900E0F72D /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBCF1E6E5AB900E0F72D /* libGoogleAnalyticsServices.a */; };
-		63BABBD81E6E5B0D00E0F72D /* GTM-MJ5TNVR in Resources */ = {isa = PBXBuildFile; fileRef = 63BABBD71E6E5B0D00E0F72D /* GTM-MJ5TNVR */; };
 		63BABBDB1E6E5B9200E0F72D /* AnalyticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BABBDA1E6E5B9200E0F72D /* AnalyticsManager.m */; };
+		63BABBE11E6E639300E0F72D /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBE01E6E639300E0F72D /* iAd.framework */; };
+		63BABBE31E6E664D00E0F72D /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBE21E6E664D00E0F72D /* libAdIdAccess.a */; };
+		63BABBE51E6E671000E0F72D /* GTM-MJ5TNVR in Resources */ = {isa = PBXBuildFile; fileRef = 63BABBE41E6E671000E0F72D /* GTM-MJ5TNVR */; };
+		63BABBE91E6E69E900E0F72D /* libAdIdAccessLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBE81E6E69E900E0F72D /* libAdIdAccessLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,16 +48,18 @@
 		63BABBC81E6E5A8000E0F72D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		63BABBCA1E6E5A8700E0F72D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		63BABBCC1E6E5A9B00E0F72D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		63BABBCE1E6E5AB900E0F72D /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccess.a; sourceTree = "<group>"; };
 		63BABBCF1E6E5AB900E0F72D /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		63BABBD21E6E5AC600E0F72D /* TAGContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGContainer.h; sourceTree = "<group>"; };
 		63BABBD31E6E5AC600E0F72D /* TAGContainerOpener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGContainerOpener.h; sourceTree = "<group>"; };
 		63BABBD41E6E5AC600E0F72D /* TAGDataLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGDataLayer.h; sourceTree = "<group>"; };
 		63BABBD51E6E5AC600E0F72D /* TAGLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGLogger.h; sourceTree = "<group>"; };
 		63BABBD61E6E5AC600E0F72D /* TAGManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGManager.h; sourceTree = "<group>"; };
-		63BABBD71E6E5B0D00E0F72D /* GTM-MJ5TNVR */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTM-MJ5TNVR"; sourceTree = "<group>"; };
 		63BABBD91E6E5B9200E0F72D /* AnalyticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsManager.h; sourceTree = "<group>"; };
 		63BABBDA1E6E5B9200E0F72D /* AnalyticsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsManager.m; sourceTree = "<group>"; };
+		63BABBE01E6E639300E0F72D /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		63BABBE21E6E664D00E0F72D /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccess.a; sourceTree = "<group>"; };
+		63BABBE41E6E671000E0F72D /* GTM-MJ5TNVR */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTM-MJ5TNVR"; sourceTree = "<group>"; };
+		63BABBE81E6E69E900E0F72D /* libAdIdAccessLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccessLibrary.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,13 +67,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63BABBE11E6E639300E0F72D /* iAd.framework in Frameworks */,
+				63BABBE31E6E664D00E0F72D /* libAdIdAccess.a in Frameworks */,
 				63BABBCD1E6E5A9B00E0F72D /* AdSupport.framework in Frameworks */,
-				63BABBD01E6E5AB900E0F72D /* libAdIdAccess.a in Frameworks */,
 				63BABBCB1E6E5A8700E0F72D /* libsqlite3.tbd in Frameworks */,
 				63BABBD11E6E5AB900E0F72D /* libGoogleAnalyticsServices.a in Frameworks */,
 				63BABBC91E6E5A8000E0F72D /* libz.tbd in Frameworks */,
 				63BABBC71E6E5A7A00E0F72D /* SystemConfiguration.framework in Frameworks */,
 				63BABBC61E6E5A7500E0F72D /* CoreData.framework in Frameworks */,
+				63BABBE91E6E69E900E0F72D /* libAdIdAccessLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,14 +124,15 @@
 		63BABB911E6E2ADA00E0F72D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				63BABBD71E6E5B0D00E0F72D /* GTM-MJ5TNVR */,
+				63BABBE41E6E671000E0F72D /* GTM-MJ5TNVR */,
 				63BABBD21E6E5AC600E0F72D /* TAGContainer.h */,
 				63BABBD31E6E5AC600E0F72D /* TAGContainerOpener.h */,
 				63BABBD41E6E5AC600E0F72D /* TAGDataLayer.h */,
 				63BABBD51E6E5AC600E0F72D /* TAGLogger.h */,
 				63BABBD61E6E5AC600E0F72D /* TAGManager.h */,
-				63BABBCE1E6E5AB900E0F72D /* libAdIdAccess.a */,
 				63BABBCF1E6E5AB900E0F72D /* libGoogleAnalyticsServices.a */,
+				63BABBE81E6E69E900E0F72D /* libAdIdAccessLibrary.a */,
+				63BABBE21E6E664D00E0F72D /* libAdIdAccess.a */,
 				63BABB921E6E2ADA00E0F72D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -134,6 +141,7 @@
 		63BABBB11E6E50C400E0F72D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63BABBE01E6E639300E0F72D /* iAd.framework */,
 				63BABBCC1E6E5A9B00E0F72D /* AdSupport.framework */,
 				63BABBCA1E6E5A8700E0F72D /* libsqlite3.tbd */,
 				63BABBC81E6E5A8000E0F72D /* libz.tbd */,
@@ -203,8 +211,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				63BABBA11E6E2ADA00E0F72D /* LaunchScreen.storyboard in Resources */,
+				63BABBE51E6E671000E0F72D /* GTM-MJ5TNVR in Resources */,
 				63BABB9E1E6E2ADA00E0F72D /* Assets.xcassets in Resources */,
-				63BABBD81E6E5B0D00E0F72D /* GTM-MJ5TNVR in Resources */,
 				63BABB9C1E6E2ADA00E0F72D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +354,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					$PROJECT_DIR/thoughtReminder/,
 					"$(PROJECT_DIR)/thoughtReminder",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					$PROJECT_DIR/thoughtReminder/libAdIdAccess.a,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.lee.thoughtReminder.thoughtReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,7 +375,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					$PROJECT_DIR/thoughtReminder/,
 					"$(PROJECT_DIR)/thoughtReminder",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					$PROJECT_DIR/thoughtReminder/libAdIdAccess.a,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.lee.thoughtReminder.thoughtReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";

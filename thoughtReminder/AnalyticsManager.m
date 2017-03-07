@@ -11,6 +11,7 @@
 #import "TAGContainerOpener.h"
 #import "TAGContainer.h"
 #import "TAGDataLayer.h"
+#import <AdSupport/AdSupport.h>
 
 @interface AnalyticsManager () <TAGContainerOpenerNotifier>
 
@@ -46,6 +47,19 @@
 -(void)containerAvailable:(TAGContainer *)container {
     dispatch_async(dispatch_get_main_queue(), ^{
         self.container = container;
+        
+        NSString *adId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+        NSString *isAdTrackingEnabled;
+        if ([ASIdentifierManager sharedManager].isAdvertisingTrackingEnabled) {
+            isAdTrackingEnabled = @"true";
+        }
+        else {
+            isAdTrackingEnabled = @"false";
+        }
+        NSLog(@"%@, %@", isAdTrackingEnabled, adId);
+        [[TAGManager instance].dataLayer push:@{@"event":@"app-init",
+                                               @"adId":adId,
+                                               @"isAdTrackingEnabled":isAdTrackingEnabled}];
         
         for (NSDictionary *event in self.storedHitsArray) {
             [self filterThenPushEvent:event];

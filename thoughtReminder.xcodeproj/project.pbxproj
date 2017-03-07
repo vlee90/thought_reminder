@@ -13,6 +13,8 @@
 		63BABB9C1E6E2ADA00E0F72D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BABB9A1E6E2ADA00E0F72D /* Main.storyboard */; };
 		63BABB9E1E6E2ADA00E0F72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BABB9D1E6E2ADA00E0F72D /* Assets.xcassets */; };
 		63BABBA11E6E2ADA00E0F72D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BABB9F1E6E2ADA00E0F72D /* LaunchScreen.storyboard */; };
+		63BABBAD1E6E2D5500E0F72D /* ThoughtsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BABBAC1E6E2D5500E0F72D /* ThoughtsViewController.m */; };
+		63BABBB01E6E342C00E0F72D /* ThoughtsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BABBAF1E6E342C00E0F72D /* ThoughtsStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,12 @@
 		63BABB9D1E6E2ADA00E0F72D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63BABBA01E6E2ADA00E0F72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63BABBA21E6E2ADA00E0F72D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63BABBAB1E6E2D5500E0F72D /* ThoughtsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThoughtsViewController.h; path = ../ThoughtsViewController.h; sourceTree = "<group>"; };
+		63BABBAC1E6E2D5500E0F72D /* ThoughtsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThoughtsViewController.m; path = ../ThoughtsViewController.m; sourceTree = "<group>"; };
+		63BABBAE1E6E342C00E0F72D /* ThoughtsStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThoughtsStorage.h; sourceTree = "<group>"; };
+		63BABBAF1E6E342C00E0F72D /* ThoughtsStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThoughtsStorage.m; sourceTree = "<group>"; };
+		63BABBB21E6E50C500E0F72D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		63BABBB41E6E50CB00E0F72D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,7 @@
 			children = (
 				63BABB901E6E2ADA00E0F72D /* thoughtReminder */,
 				63BABB8F1E6E2ADA00E0F72D /* Products */,
+				63BABBB11E6E50C400E0F72D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +71,10 @@
 				63BABB951E6E2ADA00E0F72D /* AppDelegate.m */,
 				63BABB971E6E2ADA00E0F72D /* ViewController.h */,
 				63BABB981E6E2ADA00E0F72D /* ViewController.m */,
+				63BABBAB1E6E2D5500E0F72D /* ThoughtsViewController.h */,
+				63BABBAC1E6E2D5500E0F72D /* ThoughtsViewController.m */,
+				63BABBAE1E6E342C00E0F72D /* ThoughtsStorage.h */,
+				63BABBAF1E6E342C00E0F72D /* ThoughtsStorage.m */,
 				63BABB9A1E6E2ADA00E0F72D /* Main.storyboard */,
 				63BABB9D1E6E2ADA00E0F72D /* Assets.xcassets */,
 				63BABB9F1E6E2ADA00E0F72D /* LaunchScreen.storyboard */,
@@ -77,6 +90,15 @@
 				63BABB921E6E2ADA00E0F72D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63BABBB11E6E50C400E0F72D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63BABBB41E6E50CB00E0F72D /* SystemConfiguration.framework */,
+				63BABBB21E6E50C500E0F72D /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63BABBAD1E6E2D5500E0F72D /* ThoughtsViewController.m in Sources */,
 				63BABB991E6E2ADA00E0F72D /* ViewController.m in Sources */,
 				63BABB961E6E2ADA00E0F72D /* AppDelegate.m in Sources */,
 				63BABB931E6E2ADA00E0F72D /* main.m in Sources */,
+				63BABBB01E6E342C00E0F72D /* ThoughtsStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +336,7 @@
 				63BABBA71E6E2ADA00E0F72D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

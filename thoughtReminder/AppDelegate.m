@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ThoughtsStorage.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSMutableArray *thoughts = [[[NSUserDefaults standardUserDefaults] stringArrayForKey:@"thoughts"] mutableCopy];
+    if (thoughts) {
+        [[ThoughtsStorage sharedInstance] overwriteThoughts:thoughts];
+    }
+    else {
+        
+    }
     return YES;
 }
 
@@ -45,6 +53,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [[NSUserDefaults standardUserDefaults] setObject:[[ThoughtsStorage sharedInstance] returnThoughts] forKey:@"thoughts"];
 }
 
 

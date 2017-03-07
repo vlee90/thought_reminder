@@ -25,7 +25,6 @@
 		63BABBE11E6E639300E0F72D /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBE01E6E639300E0F72D /* iAd.framework */; };
 		63BABBE31E6E664D00E0F72D /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBE21E6E664D00E0F72D /* libAdIdAccess.a */; };
 		63BABBE51E6E671000E0F72D /* GTM-MJ5TNVR in Resources */ = {isa = PBXBuildFile; fileRef = 63BABBE41E6E671000E0F72D /* GTM-MJ5TNVR */; };
-		63BABBE91E6E69E900E0F72D /* libAdIdAccessLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBE81E6E69E900E0F72D /* libAdIdAccessLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +58,6 @@
 		63BABBE01E6E639300E0F72D /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		63BABBE21E6E664D00E0F72D /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccess.a; sourceTree = "<group>"; };
 		63BABBE41E6E671000E0F72D /* GTM-MJ5TNVR */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTM-MJ5TNVR"; sourceTree = "<group>"; };
-		63BABBE81E6E69E900E0F72D /* libAdIdAccessLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccessLibrary.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +73,6 @@
 				63BABBC91E6E5A8000E0F72D /* libz.tbd in Frameworks */,
 				63BABBC71E6E5A7A00E0F72D /* SystemConfiguration.framework in Frameworks */,
 				63BABBC61E6E5A7500E0F72D /* CoreData.framework in Frameworks */,
-				63BABBE91E6E69E900E0F72D /* libAdIdAccessLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +128,6 @@
 				63BABBD51E6E5AC600E0F72D /* TAGLogger.h */,
 				63BABBD61E6E5AC600E0F72D /* TAGManager.h */,
 				63BABBCF1E6E5AB900E0F72D /* libGoogleAnalyticsServices.a */,
-				63BABBE81E6E69E900E0F72D /* libAdIdAccessLibrary.a */,
 				63BABBE21E6E664D00E0F72D /* libAdIdAccess.a */,
 				63BABB921E6E2ADA00E0F72D /* main.m */,
 			);

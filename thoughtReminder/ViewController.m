@@ -25,7 +25,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.questionTextField.delegate = self;
-
 }
 
 -(void)viewDidAppear:(BOOL)animated {

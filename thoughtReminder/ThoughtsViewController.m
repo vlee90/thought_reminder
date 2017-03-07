@@ -22,10 +22,15 @@
     [super viewDidLoad];
     self.tableView.dataSource = self;
     self.tableView.delegate= self;
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    self.tableView.opaque = NO;
+    self.tableView.backgroundView = nil;
+    self.tableView.separatorColor = [UIColor clearColor];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    
     [[AnalyticsManager sharedInstance] filterThenPushEvent:@{@"event":@"screenLoad",
                                                              @"screenName":@"Thoughts"}];
     [self.tableView reloadData];
@@ -41,7 +46,13 @@
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
     cell.textLabel.numberOfLines = 0;
     cell.textLabel.text = [thoughts objectAtIndex:indexPath.row];
-    cell.backgroundColor = [UIColor redColor];
+    if (indexPath.row % 2) {
+        [cell setBackgroundColor:[UIColor clearColor]];
+    }
+    else {
+        [cell setBackgroundColor:[UIColor lightGrayColor]];
+    }
+    
     
     return cell;
 }

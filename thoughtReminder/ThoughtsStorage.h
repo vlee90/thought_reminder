@@ -15,6 +15,7 @@
 
 - (void)addThoughts:(NSString *)thought;
 - (NSMutableArray *)returnThoughts;
+- (void)removeThoughts:(int)index;
 - (void)overwriteThoughts:(NSArray *)thoughts;
 
 @end

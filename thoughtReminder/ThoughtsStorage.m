@@ -31,6 +31,10 @@
     [self.thoughts addObject:thought];
 }
 
+- (void)removeThoughts:(int)index {
+    [self.thoughts removeObjectAtIndex:index];
+}
+
 - (NSMutableArray *)returnThoughts {
     return self.thoughts;
 }

@@ -26,6 +26,7 @@
     self.tableView.opaque = NO;
     self.tableView.backgroundView = nil;
     self.tableView.separatorColor = [UIColor clearColor];
+    self.tableView.backgroundColor = [UIColor clearColor];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -40,19 +41,26 @@
     return [[ThoughtsStorage sharedInstance] returnThoughts].count;
 }
 
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSArray *indexPaths = @[indexPath];
+        [[ThoughtsStorage sharedInstance] removeThoughts:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+}
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] init];
     NSMutableArray *thoughts = [ThoughtsStorage sharedInstance].returnThoughts;
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
     cell.textLabel.numberOfLines = 0;
     cell.textLabel.text = [thoughts objectAtIndex:indexPath.row];
-    if (indexPath.row % 2) {
-        [cell setBackgroundColor:[UIColor clearColor]];
-    }
-    else {
-        [cell setBackgroundColor:[UIColor lightGrayColor]];
-    }
-    
+    [cell setBackgroundColor:[UIColor clearColor]];
     
     return cell;
 }

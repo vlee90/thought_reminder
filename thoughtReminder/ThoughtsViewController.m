@@ -46,7 +46,6 @@
 }
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         NSArray *indexPaths = @[indexPath];
         [[ThoughtsStorage sharedInstance] removeThoughts:indexPath.row];

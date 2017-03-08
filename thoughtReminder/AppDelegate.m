@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "ThoughtsStorage.h"
 #import "AnalyticsManager.h"
+#import <UserNotifications/UserNotifications.h>
+#import <stdlib.h>
 
 @interface AppDelegate ()
 
@@ -19,16 +21,49 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert|UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error) {
+      
+        if (error) {
+            
+        }
+    }];
+    
     [[AnalyticsManager sharedInstance] startAnalytics];
     
     
     NSMutableArray *thoughts = [[[NSUserDefaults standardUserDefaults] stringArrayForKey:@"thoughts"] mutableCopy];
     if (thoughts) {
         [[ThoughtsStorage sharedInstance] overwriteThoughts:thoughts];
+        if (thoughts.count != 0) {
+            UNMutableNotificationContent *content = [UNMutableNotificationContent new];
+            content.title = @"Thought Reminder";
+            
+            NSUInteger length = thoughts.count;
+            int index = arc4random_uniform(length);
+            NSString *displayedThought = thoughts[index];
+            content.body = displayedThought;
+            
+            
+            NSDateComponents *date = [NSDateComponents new];
+            date.hour = 12;
+            date.minute = 5;
+            
+            UNCalendarNotificationTrigger *trigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:date repeats:NO];
+            
+            UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:@"TestRequest" content:content trigger:trigger];
+            
+            [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+                if (error) {
+                    
+                }
+            }];
+        }
     }
     else {
         
     }
+    
     return YES;
 }
 

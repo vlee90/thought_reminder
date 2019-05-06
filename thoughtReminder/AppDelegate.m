@@ -8,9 +8,10 @@
 
 #import "AppDelegate.h"
 #import "ThoughtsStorage.h"
-#import "AnalyticsManager.h"
 #import <UserNotifications/UserNotifications.h>
 #import <stdlib.h>
+
+@import Firebase;
 
 @interface AppDelegate ()
 
@@ -20,6 +21,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [FIRApp configure];
     
     UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
     [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert|UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error) {
@@ -28,8 +30,6 @@
             
         }
     }];
-    
-    [[AnalyticsManager sharedInstance] startAnalytics];
     
     
     NSMutableArray *thoughts = [[[NSUserDefaults standardUserDefaults] stringArrayForKey:@"thoughts"] mutableCopy];

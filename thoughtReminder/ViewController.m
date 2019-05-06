@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "ThoughtsStorage.h"
-#import "AnalyticsManager.h"
+@import FirebaseAnalytics;
 
 @interface ViewController () <UITextFieldDelegate>
 
@@ -29,12 +29,12 @@
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [[AnalyticsManager sharedInstance] filterThenPushEvent:@{@"event":@"screenLoad",
-                                                             @"screenName":@"Home"}];
 }
 
 - (IBAction)saveButtonPressed:(id)sender {
     [[ThoughtsStorage sharedInstance] addThoughts:self.questionTextField.text];
+    [FIRAnalytics logEventWithName:@"save_thought" parameters:@{@"thought": self.questionTextField.text}];
+    
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

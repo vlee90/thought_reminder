@@ -8,7 +8,6 @@
 
 #import "ThoughtsViewController.h"
 #import "ThoughtsStorage.h"
-#import "AnalyticsManager.h"
 
 @interface ThoughtsViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -32,8 +31,6 @@
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    [[AnalyticsManager sharedInstance] filterThenPushEvent:@{@"event":@"screenLoad",
-                                                             @"screenName":@"Thoughts"}];
     [self.tableView reloadData];
 }
 

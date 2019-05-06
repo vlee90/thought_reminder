@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		570D0265B687CFB0D22B738A /* libPods-thoughtReminder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FD33FBA5370094B917745C /* libPods-thoughtReminder.a */; };
+		63BA951A2280B97500947092 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63BA95192280B97500947092 /* GoogleService-Info.plist */; };
+		63BA95202280BCCA00947092 /* container in Resources */ = {isa = PBXBuildFile; fileRef = 63BA951F2280BCCA00947092 /* container */; };
 		63BABB931E6E2ADA00E0F72D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BABB921E6E2ADA00E0F72D /* main.m */; };
 		63BABB961E6E2ADA00E0F72D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BABB951E6E2ADA00E0F72D /* AppDelegate.m */; };
 		63BABB991E6E2ADA00E0F72D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BABB981E6E2ADA00E0F72D /* ViewController.m */; };
@@ -20,14 +23,14 @@
 		63BABBC91E6E5A8000E0F72D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBC81E6E5A8000E0F72D /* libz.tbd */; };
 		63BABBCB1E6E5A8700E0F72D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBCA1E6E5A8700E0F72D /* libsqlite3.tbd */; };
 		63BABBCD1E6E5A9B00E0F72D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBCC1E6E5A9B00E0F72D /* AdSupport.framework */; };
-		63BABBD11E6E5AB900E0F72D /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBCF1E6E5AB900E0F72D /* libGoogleAnalyticsServices.a */; };
-		63BABBDB1E6E5B9200E0F72D /* AnalyticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BABBDA1E6E5B9200E0F72D /* AnalyticsManager.m */; };
 		63BABBE11E6E639300E0F72D /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBE01E6E639300E0F72D /* iAd.framework */; };
-		63BABBE31E6E664D00E0F72D /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BABBE21E6E664D00E0F72D /* libAdIdAccess.a */; };
-		63BABBE51E6E671000E0F72D /* GTM-MJ5TNVR in Resources */ = {isa = PBXBuildFile; fileRef = 63BABBE41E6E671000E0F72D /* GTM-MJ5TNVR */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47FD33FBA5370094B917745C /* libPods-thoughtReminder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-thoughtReminder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E4348E1417AB98C2B459986 /* Pods-thoughtReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thoughtReminder.debug.xcconfig"; path = "Target Support Files/Pods-thoughtReminder/Pods-thoughtReminder.debug.xcconfig"; sourceTree = "<group>"; };
+		63BA95192280B97500947092 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63BA951F2280BCCA00947092 /* container */ = {isa = PBXFileReference; lastKnownFileType = folder; path = container; sourceTree = "<group>"; };
 		63BABB8E1E6E2ADA00E0F72D /* thoughtReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thoughtReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BABB921E6E2ADA00E0F72D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63BABB941E6E2ADA00E0F72D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,17 +50,8 @@
 		63BABBC81E6E5A8000E0F72D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		63BABBCA1E6E5A8700E0F72D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		63BABBCC1E6E5A9B00E0F72D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		63BABBCF1E6E5AB900E0F72D /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
-		63BABBD21E6E5AC600E0F72D /* TAGContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGContainer.h; sourceTree = "<group>"; };
-		63BABBD31E6E5AC600E0F72D /* TAGContainerOpener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGContainerOpener.h; sourceTree = "<group>"; };
-		63BABBD41E6E5AC600E0F72D /* TAGDataLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGDataLayer.h; sourceTree = "<group>"; };
-		63BABBD51E6E5AC600E0F72D /* TAGLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGLogger.h; sourceTree = "<group>"; };
-		63BABBD61E6E5AC600E0F72D /* TAGManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGManager.h; sourceTree = "<group>"; };
-		63BABBD91E6E5B9200E0F72D /* AnalyticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsManager.h; sourceTree = "<group>"; };
-		63BABBDA1E6E5B9200E0F72D /* AnalyticsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsManager.m; sourceTree = "<group>"; };
 		63BABBE01E6E639300E0F72D /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		63BABBE21E6E664D00E0F72D /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccess.a; sourceTree = "<group>"; };
-		63BABBE41E6E671000E0F72D /* GTM-MJ5TNVR */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTM-MJ5TNVR"; sourceTree = "<group>"; };
+		BF0154587B57E891986FE366 /* Pods-thoughtReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thoughtReminder.release.xcconfig"; path = "Target Support Files/Pods-thoughtReminder/Pods-thoughtReminder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +60,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				63BABBE11E6E639300E0F72D /* iAd.framework in Frameworks */,
-				63BABBE31E6E664D00E0F72D /* libAdIdAccess.a in Frameworks */,
 				63BABBCD1E6E5A9B00E0F72D /* AdSupport.framework in Frameworks */,
 				63BABBCB1E6E5A8700E0F72D /* libsqlite3.tbd in Frameworks */,
-				63BABBD11E6E5AB900E0F72D /* libGoogleAnalyticsServices.a in Frameworks */,
 				63BABBC91E6E5A8000E0F72D /* libz.tbd in Frameworks */,
 				63BABBC71E6E5A7A00E0F72D /* SystemConfiguration.framework in Frameworks */,
 				63BABBC61E6E5A7500E0F72D /* CoreData.framework in Frameworks */,
+				570D0265B687CFB0D22B738A /* libPods-thoughtReminder.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +78,7 @@
 				63BABB901E6E2ADA00E0F72D /* thoughtReminder */,
 				63BABB8F1E6E2ADA00E0F72D /* Products */,
 				63BABBB11E6E50C400E0F72D /* Frameworks */,
+				84E297D6F97D86E3BC8DA938 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +93,7 @@
 		63BABB901E6E2ADA00E0F72D /* thoughtReminder */ = {
 			isa = PBXGroup;
 			children = (
+				63BA951F2280BCCA00947092 /* container */,
 				63BABB941E6E2ADA00E0F72D /* AppDelegate.h */,
 				63BABB951E6E2ADA00E0F72D /* AppDelegate.m */,
 				63BABB971E6E2ADA00E0F72D /* ViewController.h */,
@@ -107,12 +102,11 @@
 				63BABBC41E6E5A6400E0F72D /* ThoughtsViewController.m */,
 				63BABBAE1E6E342C00E0F72D /* ThoughtsStorage.h */,
 				63BABBAF1E6E342C00E0F72D /* ThoughtsStorage.m */,
-				63BABBD91E6E5B9200E0F72D /* AnalyticsManager.h */,
-				63BABBDA1E6E5B9200E0F72D /* AnalyticsManager.m */,
 				63BABB9A1E6E2ADA00E0F72D /* Main.storyboard */,
 				63BABB9D1E6E2ADA00E0F72D /* Assets.xcassets */,
 				63BABB9F1E6E2ADA00E0F72D /* LaunchScreen.storyboard */,
 				63BABBA21E6E2ADA00E0F72D /* Info.plist */,
+				63BA95192280B97500947092 /* GoogleService-Info.plist */,
 				63BABB911E6E2ADA00E0F72D /* Supporting Files */,
 			);
 			path = thoughtReminder;
@@ -121,14 +115,6 @@
 		63BABB911E6E2ADA00E0F72D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				63BABBE41E6E671000E0F72D /* GTM-MJ5TNVR */,
-				63BABBD21E6E5AC600E0F72D /* TAGContainer.h */,
-				63BABBD31E6E5AC600E0F72D /* TAGContainerOpener.h */,
-				63BABBD41E6E5AC600E0F72D /* TAGDataLayer.h */,
-				63BABBD51E6E5AC600E0F72D /* TAGLogger.h */,
-				63BABBD61E6E5AC600E0F72D /* TAGManager.h */,
-				63BABBCF1E6E5AB900E0F72D /* libGoogleAnalyticsServices.a */,
-				63BABBE21E6E664D00E0F72D /* libAdIdAccess.a */,
 				63BABB921E6E2ADA00E0F72D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -143,8 +129,18 @@
 				63BABBC81E6E5A8000E0F72D /* libz.tbd */,
 				63BABBB41E6E50CB00E0F72D /* SystemConfiguration.framework */,
 				63BABBB21E6E50C500E0F72D /* CoreData.framework */,
+				47FD33FBA5370094B917745C /* libPods-thoughtReminder.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84E297D6F97D86E3BC8DA938 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E4348E1417AB98C2B459986 /* Pods-thoughtReminder.debug.xcconfig */,
+				BF0154587B57E891986FE366 /* Pods-thoughtReminder.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63BABBA51E6E2ADA00E0F72D /* Build configuration list for PBXNativeTarget "thoughtReminder" */;
 			buildPhases = (
+				C9D7F020E3792DEB0F7EF7B9 /* [CP] Check Pods Manifest.lock */,
 				63BABB8A1E6E2AD900E0F72D /* Sources */,
 				63BABB8B1E6E2AD900E0F72D /* Frameworks */,
 				63BABB8C1E6E2AD900E0F72D /* Resources */,
+				A743832E687E3F7F5B5BC8B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,7 +171,7 @@
 		63BABB861E6E2AD900E0F72D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = VincentLee;
 				TargetAttributes = {
 					63BABB8D1E6E2AD900E0F72D = {
@@ -206,21 +204,68 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63BA95202280BCCA00947092 /* container in Resources */,
 				63BABBA11E6E2ADA00E0F72D /* LaunchScreen.storyboard in Resources */,
-				63BABBE51E6E671000E0F72D /* GTM-MJ5TNVR in Resources */,
 				63BABB9E1E6E2ADA00E0F72D /* Assets.xcassets in Resources */,
 				63BABB9C1E6E2ADA00E0F72D /* Main.storyboard in Resources */,
+				63BA951A2280B97500947092 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A743832E687E3F7F5B5BC8B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-thoughtReminder/Pods-thoughtReminder-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleTagManager/TagManagerResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TagManagerResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-thoughtReminder/Pods-thoughtReminder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9D7F020E3792DEB0F7EF7B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-thoughtReminder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63BABB8A1E6E2AD900E0F72D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63BABBDB1E6E5B9200E0F72D /* AnalyticsManager.m in Sources */,
 				63BABB991E6E2ADA00E0F72D /* ViewController.m in Sources */,
 				63BABBC51E6E5A6400E0F72D /* ThoughtsViewController.m in Sources */,
 				63BABB961E6E2ADA00E0F72D /* AppDelegate.m in Sources */,
@@ -260,15 +305,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -291,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -308,15 +361,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -333,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,6 +404,7 @@
 		};
 		63BABBA61E6E2ADA00E0F72D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E4348E1417AB98C2B459986 /* Pods-thoughtReminder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GBG956P6A4;
@@ -352,10 +414,6 @@
 					"$(inherited)",
 					$PROJECT_DIR/thoughtReminder/,
 					"$(PROJECT_DIR)/thoughtReminder",
-				);
-				OTHER_LDFLAGS = (
-					"-force_load",
-					$PROJECT_DIR/thoughtReminder/libAdIdAccess.a,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.lee.thoughtReminder.thoughtReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -364,6 +422,7 @@
 		};
 		63BABBA71E6E2ADA00E0F72D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF0154587B57E891986FE366 /* Pods-thoughtReminder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GBG956P6A4;
@@ -373,10 +432,6 @@
 					"$(inherited)",
 					$PROJECT_DIR/thoughtReminder/,
 					"$(PROJECT_DIR)/thoughtReminder",
-				);
-				OTHER_LDFLAGS = (
-					"-force_load",
-					$PROJECT_DIR/thoughtReminder/libAdIdAccess.a,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.lee.thoughtReminder.thoughtReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
